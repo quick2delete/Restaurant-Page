@@ -47,7 +47,7 @@ ul li {
 
 main.content {
   background-color: var(--primary-bg-color);
-  height: 79vh;
+  height: 80vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   /* Should remember this line */
@@ -63,14 +63,40 @@ main.content {
   object-fit: cover;
 }
 
+.intro {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.intro-greeting ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.intro-greeting ul li {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.intro-desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.4;
+}
+
 footer {
-  max-height: 3vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 10vh;
   background-color: var(--main-bg-color);
   color: #fff;
-  padding: 40px;
   grid-column: 1/3;
   grid-row: 6/7;
+  /* position: fixed;
+  bottom: 0px; */
 }
