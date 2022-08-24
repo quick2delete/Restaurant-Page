@@ -11,6 +11,10 @@ module.exports = {
     filename: "[name].js",
   },
 
+  // devServer: {
+  //   port: 8080
+  // },
+
   module: {
     rules: [
       {
@@ -21,6 +25,18 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+            },
+          },
+        ],
+        exclude: path.resolve(__dirname, "src/index.html"),
+      },
     ],
   },
 
@@ -28,7 +44,23 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Restaurant App",
       filename: "index.html",
-      template: "src/home.html",
+      template: "./src/index.html",
+      inject: true,
+      chunks: ["bundle"],
     }),
+
+    // new HtmlWebpackPlugin({
+    //   filename: "menu.html",
+    //   template: "./src/menu.html",
+    //   inject: true,
+    //   chunks: ["bundle"],
+    // }),
+
+    // new HtmlWebpackPlugin({
+    //   filename: "contact.html",
+    //   template: "./src/contact.html",
+    //   inject: true,
+    //   chunks: ["bundle"],
+    // }),
   ],
 };

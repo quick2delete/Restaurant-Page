@@ -45,6 +45,15 @@ ul li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover{
+  color: var(--primary-bg-color)
+}
+
 main.content {
   background-color: var(--primary-bg-color);
   height: 80vh;
@@ -65,7 +74,7 @@ main.content {
 
 .intro {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 3fr;
 }
 
 .intro-greeting ul {
@@ -76,16 +85,23 @@ main.content {
 }
 
 .intro-greeting ul li {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bolder;
 }
 
-.intro-desc{
+.intro-desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  line-height: 1.4;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.intro-desc h2 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  padding: 0 50px;
+  font-style: italic;
 }
 
 footer {
