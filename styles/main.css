@@ -54,7 +54,7 @@ a:hover{
   color: var(--primary-bg-color)
 }
 
-main.content {
+.home-main {
   background-color: var(--primary-bg-color);
   height: 80vh;
   display: grid;
