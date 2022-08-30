@@ -6,6 +6,8 @@ import createMenu from "./components/menu.js";
 const menu = document.getElementById("menu");
 const mainImg = document.getElementById("mainImg");
 
+
+
 mainImg.src = main;
 
 menu.addEventListener("click", createMenu);

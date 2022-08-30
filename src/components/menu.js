@@ -31,9 +31,10 @@ const htmlInsert = `<div class='appetizers'>
 </div>`;
 
 const createMenu = () => {
+  const content = document.querySelector(".content");
   const div = document.createElement("div");
   div.innerHTML = htmlInsert;
-  content.appendChild("div");
+  content.appendChild(div);
 };
 
 export default createMenu;
