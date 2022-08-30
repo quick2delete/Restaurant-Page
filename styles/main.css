@@ -13,23 +13,17 @@ body {
 }
 
 .container {
-  max-width: 100vw;
-  max-height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  min-height: 90vh;
 }
 
 nav {
-  max-height: 11vh;
+  min-height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--main-bg-color);
   color: #fff;
   padding: 0 50px;
-  grid-column: 1/3;
-  grid-row: 1/2;
 }
 
 h1 {
@@ -50,23 +44,25 @@ a {
   color: #fff;
 }
 
-a:hover{
-  color: var(--primary-bg-color)
+a:hover {
+  color: var(--primary-bg-color);
+}
+
+.content {
+  max-width: 100vw;
 }
 
 .home-main {
+  min-height: 80vh;
   background-color: var(--primary-bg-color);
-  height: 80vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   /* Should remember this line */
   grid-template-rows: auto;
-  gap: 20px;
-  grid-column: 1/3;
-  grid-row: 2/6;
 }
 
 .content img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -108,11 +104,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 10vh;
+  min-height: 10vh;
   background-color: var(--main-bg-color);
   color: #fff;
-  grid-column: 1/3;
-  grid-row: 6/7;
   /* position: fixed;
   bottom: 0px; */
 }
