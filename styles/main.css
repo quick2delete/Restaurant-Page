@@ -50,6 +50,7 @@ a:hover {
 
 .content {
   max-width: 100vw;
+  position:relative;
 }
 
 .home-main {
@@ -98,6 +99,11 @@ a:hover {
   line-height: 1.5;
   padding: 0 50px;
   font-style: italic;
+}
+
+.menu{
+  position:absolute;
+  top:0;
 }
 
 footer {

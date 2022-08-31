@@ -28,11 +28,20 @@ const htmlInsert = `<div class='appetizers'>
 <p>Tempura Appetizer..............................$5.50</p>
 <p>Lightly Deep Fried 2 pcs Shrimp & 2 pcs Vegetables</p>
 </div>
-</div>`;
+</div>
+<div class='rolls'>
+<h3>Rolls</h3>
+<div class="roll-detail">
+<p>California Roll..............................$6.00</p>
+<p>Cucumber, imitation crab, and avocado rolled over tobiko</p>
+</div>
+</div>
+`;
 
 const createMenu = () => {
   const content = document.querySelector(".content");
   const div = document.createElement("div");
+  div.classList.add("menu");
   div.innerHTML = htmlInsert;
   content.appendChild(div);
 };
