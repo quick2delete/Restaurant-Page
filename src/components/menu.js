@@ -29,12 +29,38 @@ const htmlInsert = `<div class='appetizers'>
 <p>Lightly Deep Fried 2 pcs Shrimp & 2 pcs Vegetables</p>
 </div>
 </div>
+
 <div class='rolls'>
 <h3>Rolls</h3>
 <div class="roll-detail">
 <p>California Roll..............................$6.00</p>
 <p>Cucumber, imitation crab, and avocado rolled over tobiko</p>
 </div>
+<div class="roll-detail">
+<p>Spicy Tuna Roll..............................$6.00</p>
+<p>Chopped tuna fish mixed with spicy sauce</p>
+</div>
+<div class="roll-detail">
+<p>Philadelphia Roll..............................$6.00</p>
+<p>Chopped tuna fish mixed with spicy sauce</p>
+</div>
+<div class="roll-detail">
+<p>Philadelphia Roll..............................$6.00</p>
+<p>Smoked Salmon, Avocado, Cucumber, Cream Cheese</p>
+</div>
+<div class="roll-detail">
+<p>Rainbow Roll..............................$13.00</p>
+<p>Cucumber, Tuna, Salmon & White Fish</p>
+</div>
+<div class="roll-detail">
+<p>Spider Roll..............................$13.00</p>
+<p>Soft Shell Crab, Avocado & Masago</p>
+</div>
+<div class="roll-detail">
+<p>Shrimp Tempura Roll..............................$13.00</p>
+<p>Avocado, Shrimp Tempura with Eel Sauce on top
+</div>
+
 </div>
 `;
 
