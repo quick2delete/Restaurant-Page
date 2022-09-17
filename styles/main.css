@@ -50,7 +50,7 @@ a:hover {
 
 .content {
   max-width: 100vw;
-  position:relative;
+  position: relative;
 }
 
 .home-main {
@@ -101,12 +101,6 @@ a:hover {
   font-style: italic;
 }
 
-.menu{
-  position:absolute;
-  top:0;
-  display:flex;
-}
-
 footer {
   display: flex;
   justify-content: center;
@@ -117,3 +111,23 @@ footer {
   /* position: fixed;
   bottom: 0px; */
 }
+
+/* Menu Page */
+
+.menu {
+  max-width: 100%;
+  position: absolute;
+  top: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.app-detail p:nth-child(2),
+.roll-detail p:nth-child(2) {
+  font-size: 0.7rem;
+}
+
+/* Contact Page */
