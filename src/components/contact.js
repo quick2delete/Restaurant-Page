@@ -1,7 +1,9 @@
+import createMap from "./map";
+
 const htmlInsert = `
 <div class="contact">
-<div class="contact-map">
-
+<div id="map">
+${createMap()}
 </div>
 <div class="social-media">
 

@@ -3,6 +3,7 @@ import "../styles/main.css";
 import main from "./assets/main.jpg";
 import createMenu from "./components/menu";
 import createContact from "./components/contact";
+import "leaflet";
 
 const menu = document.getElementById("menu");
 const contact = document.getElementById("contact");
