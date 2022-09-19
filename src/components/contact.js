@@ -1,4 +1,5 @@
 import createMap from "./map";
+import "leaflet";
 
 const htmlInsert = `
 <div class="contact">
