@@ -3,9 +3,7 @@ import "leaflet";
 
 const htmlInsert = `
 <div class="contact">
-<div id="map">
 ${createMap()}
-</div>
 <div class="social-media">
 
     <ul>
